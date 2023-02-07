@@ -1,4 +1,4 @@
-# SandBox-Music-Player-project
+# Music Player project
 Lesson Notes 
 
 
@@ -7,3 +7,4 @@ Lesson Notes
 
 - [] Demo the list making tool
 - [x] I like this item
+<del> [x] This item is so old school. </del>
