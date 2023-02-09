@@ -4,16 +4,15 @@ import ddf.minim.effects.*;
 import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
-//
 //Global Variables
 Minim minim;
-AudioPlayer song;
+AudioPlayer song0;
 //
 void setup() {
-minim = new Minim(this);
-song = minim.loadFile("../MP3.mp3");
-song.loop(0);
-} //End setup
+  minim = new Minim(this);
+  song0 = minim.loadFile("../Music/YoungDead.mp3");
+  song0.loop();
+}//End setup
 //
 void draw() {} //End draw
 //
