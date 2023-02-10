@@ -8,6 +8,7 @@ import ddf.minim.ugens.*;
 Minim minim;
 AudioPlayer song0, song1, song2, song3, song4, song5, song6, song7;
 AudioPlayer soundEffect0, soundEffect1;
+
 //
 void setup() {
   minim = new Minim(this);
@@ -27,10 +28,13 @@ void draw() {} //End draw
 //
 void keyPressed() {
   soundEffect0.play();
+  if ( key=='E' ) || key=='e' ) exit();
+  if ( key==CODED && key==ESC ) exit();
 } //End keyPressed
 //
 void mousePressed() {
   soundEffect0.rewind();
+  if ( firstMouseclick==false ) firstMouseclick = true;
 } //End mousePressed
 //
 //End MAIN Program
