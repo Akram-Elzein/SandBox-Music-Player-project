@@ -27,12 +27,10 @@ void setup() {
 void draw() {} //End draw
 //
 void keyPressed() {
-  if ( key=='E' ) || key=='e' ) exit();
   if ( key==CODED && key==ESC ) exit();
 } //End keyPressed
 //
 void mousePressed() {
-  if ( firstMouseclick==false ) firstMouseclick = true;
 } //End mousePressed
 //
 //End MAIN Program
