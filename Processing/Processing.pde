@@ -21,19 +21,17 @@ void setup() {
   song6 = minim.loadFile("../Music/calm.mp3");
   soundEffect0 = minim.loadFile("../Sound Effects/Bone Crack Sound Effect.mp3");
   soundEffect1 = minim.loadFile("../Sound Effects/Samsung notification sound effect.mp3");
-  //song0.loop(0);
+  song0.loop(0);
 }//End setup
 //
 void draw() {} //End draw
 //
 void keyPressed() {
-  soundEffect0.play();
   if ( key=='E' ) || key=='e' ) exit();
   if ( key==CODED && key==ESC ) exit();
 } //End keyPressed
 //
 void mousePressed() {
-  soundEffect0.rewind();
   if ( firstMouseclick==false ) firstMouseclick = true;
 } //End mousePressed
 //
