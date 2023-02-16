@@ -5,7 +5,7 @@ void loadMusic() {
    String musicPathway = "../Music/"; //From Sketch to Music Folder
    String soundEffectPathway = "../Sound Effects/"; //From Sketch to Sound Effect Folder
    String YGFileName = "YG.mp3";
-   String To The MoonFileName = "To The Moon.mp3"
+   String To The MoonFileName = "To The Moon.mp3";
    String RelaxFileName = "Relax.mp3";
    String New ForceFileName = "New Force.mp3";
    String LegendFileName = "Legend.mp3";
