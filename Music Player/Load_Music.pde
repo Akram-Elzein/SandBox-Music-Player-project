@@ -22,6 +22,6 @@ void loadMusic() {
   song6 = minim.loadFile( musicPathway + calmFileName);
   soundEffect0 = minim.loadFile( soundEfffectPathway + Bone Crack Sound EffectFileName);
   soundEffect1 = minim.loadFile( soundEffectPathway + Samsung notification sound effectFileName);
-  song1.loop(0);
-  soundEffect0.loop(0)
-}
+  //
+  //println("Music Pathway is", musicPathway);
+}//End loadMusic
