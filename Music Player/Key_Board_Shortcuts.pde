@@ -16,6 +16,19 @@ void musicShortCuts() {
   if ( key == '6' ) song5.loop(0);
   if ( key == '7' ) song6.loop(0);
   if ( key == '8' ) song7.loop(0);
+  //
+  if ( key == 'U' || key=='u' ) ; autoPlay();
+  if ( key == 'P' || key=='p' ) ; playPause();
+  if ( key == 'M' || key=='m' ) ; mute();
+  if ( key == 'S' || key=='s' ) ; stopSong();
+  if ( key == 'F' || key=='f' ) ; fastForword();
+  if ( key == 'R' || key=='r' ) ; fastRewind();
+  if ( key == 'N' || key=='n' ) ; nextSong();
+  if ( key == 'B' || key=='b' ) ; previousSong();
+  if ( key == 'L' || key=='l' ) ; loopSong();
+  if ( key == 'O' || key=='o' ) ; loopPlaylist(); //entire playlist
+  if ( key == 'W' || key=='w' ) ; shufflePlaylist(); //shuffle
+  if ( key == 'E' || key=='e' ) ; loopAndShuffle(); //Loop and Shuffle
 }//End musicShortCuts
 //
 void quitButtons() {
@@ -35,4 +48,43 @@ void quitButtonCode() {
   exit();
 }//End quitButtonCode
 //
+void autoPlay() {}//End AutoPlay
+//
+void  playPause() {}//End  playPause
+//
+void mute()
+{
+  //MUTE, not PAUSE, only affects the speakers
+  //ERROR: 
+  //ERROR: user will spam mute if song is at end of file
+  if ( song0. isMuted() ) {
+    song0.unmute();
+  } else if ( song0. isMuted() && song0.position() >= song0.length()*4/5 ) {
+    song0.rewind();
+    song0.unmute();
+  } else {
+    song0.mute();
+  } 
+}//End mute
+//
+void stopSong() {}//End stopSong
+//
+void fastForword() {}//End fastForword
+//
+void fastRewind() {}//End fastRewind
+//
+void nextSong() {}//End nextSong
+//
+void previousSong() {}//End  previousSong
+//
+void loopSong() {}//End loopSong
+//
+void loopPlaylist() {}//End loopPlaylist
+//
+void shufflePlaylist() {}//End shufflePlaylist
+//
+void loopAndShuffle() {}//End loopAndShuffle
+//
+
+
 //End Key Board Short Cuts Sub Programg
