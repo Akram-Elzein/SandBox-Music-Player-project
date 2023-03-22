@@ -13,15 +13,15 @@ void loadMusic() {
   String calmFileName = "calm.mp3";
   String boneCrack Sound EffectFileName = "Bone Crack Sound Effect.mp3";
   String Samsung notification sound effectFileName = "Samsung notification sound effect.mp3";
-  song0 = minim.loadFile( musicPathway + YGFileName );
-  song1 = minim.loadFile( musicPathway + To The MoonFileName);
-  song2 = minim.loadFile( musicPathway + RelaxFileName);
-  song3 = minim.loadFile( musicPathway + New ForceFileName);
-  song4 = minim.loadFile( musicPathway + LegendFileName);
-  song5 = minim.loadFile( musicPathway + FLOW ALLFileName);
-  song6 = minim.loadFile( musicPathway + calmFileName);
-  soundEffect0 = minim.loadFile( soundEfffectPathway + Bone Crack Sound EffectFileName);
-  soundEffect1 = minim.loadFile( soundEffectPathway + Samsung notification sound effectFileName);
+  songs[0] = minim.loadFile( musicPathway + YGFileName );
+  songs[1]  = minim.loadFile( musicPathway + To The MoonFileName);
+  songs[3] = minim.loadFile( musicPathway + RelaxFileName);
+  songs[4] = minim.loadFile( musicPathway + New ForceFileName);
+  songs[5] = minim.loadFile( musicPathway + LegendFileName);
+  songs[6] = minim.loadFile( musicPathway + FLOW ALLFileName);
+  songs[7] = minim.loadFile( musicPathway + calmFileName);
+  soundEffects[0]= minim.loadFile( soundEfffectPathway + Bone Crack Sound EffectFileName);
+  soundEffects[1] = minim.loadFile( soundEffectPathway + Samsung notification sound effectFileName);
   //
   //println("Music Pathway is", musicPathway);
 }//End loadMusic

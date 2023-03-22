@@ -8,14 +8,14 @@ void keyPressedShortCuts() {
 void musicShortCuts() {
   //Key Board Short Cuts for Music, use numbers
   //Hint: notice human numbering vs. computer numbering9
-  if ( key == '1' ) song0.loop(0); //.rewind() is included in .loop()
-  if ( key == '2' ) song1.loop(0);
-  if ( key == '3' ) song2.loop(0);
-  if ( key == '4' ) song3.loop(0);
-  if ( key == '5' ) song4.loop(0);
-  if ( key == '6' ) song5.loop(0);
-  if ( key == '7' ) song6.loop(0);
-  if ( key == '8' ) song7.loop(0);
+  if ( key == '1' ) songs[0].loop(0); //.rewind() is included in .loop()
+  if ( key == '2' ) songs[1].loop(0);
+  if ( key == '3' ) songs[2].loop(0);
+  if ( key == '4' ) songs[3].loop(0);
+  if ( key == '5' ) songs[4].loop(0);
+  if ( key == '6' ) songs[5].loop(0);
+  if ( key == '7' ) songs[6].loop(0);
+  if ( key == '8' ) songs[7].loop(0);
   //
   if ( key == 'U' || key=='u' ) ; autoPlay();
   if ( key == 'P' || key=='p' ) ; playPause();
@@ -42,15 +42,34 @@ void quitButtons() {
 }//End quitButtons
 //
 void quitButtonCode() {
-  soundEffect1.loop(0); //only need partial file, use .play(int millis)
+  soundEffects[1].loop(0); //only need partial file, use .play(int millis)
   //visual Image or Text of Goodbye
   delay(3000); //alternate way of playing sound once 
   exit();
 }//End quitButtonCode
 //
-void autoPlay() {}//End AutoPlay
+void autoPlay() {
+  //Note: plays one song, then the next automatically
+  //Asks the computer if a song is playing, continually
+  //When current song finishes, it rewinds current song and plays the next song
+}//End AutoPlay
 //
-void  playPause() {}//End  playPause
+void  playPause() 
+{
+  //Ask computer if the song is playing
+  //Note: remember to use Autoplay
+  //ERROR: song will not play if at the end 
+  if ( song0.isPlaying() ) {
+    song0.pause();
+  } else if (song0.position() >= song0.length()*4/5 ) { //80% of the song 
+  song0.rewind();
+  song0.play();
+  //Remember, Auto Play is beter because it plays the next song
+  } else {
+    //autoPlay(), is better here 
+    song0.play(); //Interim solution
+  }
+}//End  playPause
 //
 void mute()
 {
