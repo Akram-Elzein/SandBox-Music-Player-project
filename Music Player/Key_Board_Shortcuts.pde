@@ -52,6 +52,17 @@ void autoPlay() {
   //Note: plays one song, then the next automatically
   //Asks the computer if a song is playing, continually
   //When current song finishes, it rewinds current song and plays the next song
+  //
+  /*ERROR: autoplay never stops the song if it is enabled
+  - once the song stops, or by pressing STOP
+  - next song will start
+  - might even start the next song at the same time as the current song
+  */
+  if ( autoPlayON==false ) {
+    autoPlayON=true;
+  } else {
+    autoPlayON=false;
+    songs[currentSong].pause(); //enables play to continue when auto play is turned off
 }//End AutoPlay
 //
 void  playPause() 
