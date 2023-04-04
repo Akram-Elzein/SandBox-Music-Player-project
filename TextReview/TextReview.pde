@@ -1,22 +1,26 @@
 //Global Variables
+float textRectX, textRectY, textRectWidth, textRectHeight;
+PFont font;
+color purpleInc=#FFFF00, restWhiteInk=#FFFFFF; //Not good for night Mode (Blue Light)
+String string = "I Love Computer Science"
 //
 void setup(){
 size(700,500); //fullScreen(); //displayWidth & displayHeight
 //
-//Population
-textRectX = width*1/5;
-textRectY = height*1/10;
-textRextWidth = width*3/5;
-textRectHeight = height*1/10;
+//Population, from display
+textRectX1 = width*1/5;
+textRectY1 = height*1/10;
+textRextWidth1 = width*3/5;
+textRectHeight1 = height*1/10;
 //
-rect( textRectX, textRextY, textRectWidth, textRectHeight );
-/*
-println("Start of Console");
-String[] fontList = PFont.list(); //To list all fonts available on system
-printArray(fontList); //For listing all possible fonts to choose, then createFont
-*/
-// Choose Font
-font = createFont ("
+
+//
+fill(purplrInk); //Ink, hexidecimal copied from color selector
+textFont(font, height); // change number untill it fits
+textSize( 50 ); //change the number util it fits 
+//
+//
+
 }//End Set Up
 //
 void draw() {}//End Draw
