@@ -2,16 +2,29 @@
 float textRectX1, textRextY1, textRectWidth1, textRectHeight1;
 float textRectX2, textRextY2, textRectWidth2, textRectHeight2;
 float textRectX3, textRextY3, textRectWidth3, textRectHeight3;
+PFont font;
+color purpleInc=#FFFF00, restWhiteInk=#FFFFFF; //Not good for night Mode (Blue Light)
+String string1 = "I Love Computer Science.";
+String string2 = "Bottom of the Page.";
+String string3 = "Middle.";
 //
-void allText() {}//End All Text
+void allText() { //VOIDs that go into MAIN PROGRAM
+textDraw1();
+textDraw2();
+textDraw3();
+}//End All Text
 //
-void textSetup() {
+void textSetup() { //Executed Once
   //Population, from display
-  textRectX1 = width*1/5;
+  //Must have Case study
+  textRectX1 = textRectX2 = textRectX3 = width*1/5;
+  textRectWidth1 = textRectWidth2 = textRectWidth3 = width*3/5;
+  textRectHeight1 = textRectHeight2 = textRectHeight3 = height*1/10;
   textRectY1 = height*1/10;
-  textRextWidth1 = width*3/5;
-  textRectHeight1 = height*1/10;
+  textRextY2 = height*8/10;
+  textRectY3 = height*5/10;
   //
+  //For visualizing rect(), variables are important
   rect( textRectX1, textRextY1, textRectWidth1, textRectHeight1 );
   rect( textRectX2, textRextY2, textRectWidth2, textRectHeight2 );
   rect( textRectX3, textRextY3, textRectWidth3, textRectHeight3 );
