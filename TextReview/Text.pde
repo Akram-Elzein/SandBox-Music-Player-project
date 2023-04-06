@@ -39,7 +39,7 @@ void textSetup() { //Executed Once
   //
 }//End Text Setup
 //
-void textDraw1() {
+void pretextDraw() { //EXECUTED Code applied to all textDraw's
   fill(purplrInk); //Ink, hexidecimal copied from color selector
   textAlign (CENTER,CENTER); // Align X&Y, see processing.org
   //Horizontal Values (X): [LEFT | CENTER | RIGHT]
@@ -47,5 +47,36 @@ void textDraw1() {
   textFont(font, height); // change number untill it fits
   textSize( 20 ); //change the number util it fits 
   //
+}//End Pre Text Draw
+//
+void textDraw1() {
+  preTextDraw(); //Like COPY & PASTE, will not change
+  //
+  //Text size will change depending on string
+  textSize( 20 ); //Change Number untill it Fits
+  //
+  //Printing text on Canvas
+  text( string1, textRectX1, textRextY1, textRectWidth1, textRectHeight1 )
+  fill(resetWhiteInk);
+  //
 }//End Text Draw 1
-  
+//
+void textDraw2() {
+  preTextDraw(); //Like COPY & PASTE, will not change
+  //Change textAlign()
+  textAlign (CENTER, TOP); //Align X&Y
+  //Change textSize()
+  textSize( 20 ); //Change the number unil it fits, largest font size 
+  text( string2, textRectX2, textRextY2, textRectWidth2, textRectHeight2 )
+  fill(resetWhiteInk);
+}//End Text Draw 2
+//
+void textDraw3() {
+  preTextDraw(); //Like COPY & PASTE, will not change
+  //Change textSize()
+  textSize( 20 );  //Change the number unil it fits, largest font size 
+  text( string3, textRectX3, textRextY3, textRectWidth3, textRectHeight3 )
+  fill(resetWhiteInk)
+}//End Text Draw 3
+//
+//End Text subprogram
