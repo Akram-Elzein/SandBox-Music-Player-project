@@ -4,7 +4,7 @@
 //Global Variables
 int appWidth, appHeight;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight
-PImage pic;
+rrrrrrrrrrrrrrrrrrrrr
 String pathWay, fileName;
 Boolean nightMode=false;
 float picX_Adjusted=0.0, picY_Adjusted=0.0, picWidthAdjusted=0.0, picHeightAdjusted=0.0;
@@ -47,8 +47,6 @@ if ( picHeightAdjusted > backgroundWidthAdjusted) {
   if ( imageCenter==true ) picX_Adjusted = backgroundImageX + whiteSpace*1/2;
   if ( imageRightBottom==true ) picX_Adjusted = backgroundImageX + whiteSpace;
 } else { //FALSE if portrait
-
-
 //
 //Rectangle Layout and Image drawing to CANVAS
 //rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight )
