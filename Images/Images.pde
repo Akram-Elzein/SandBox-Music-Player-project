@@ -4,7 +4,7 @@
 //Global Variables
 int appWidth, appHeight;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight
-rrrrrrrrrrrrrrrrrrrrr
+PImage pic;
 String pathWay, fileName;
 Boolean nightMode=false;
 float picX_Adjusted=0.0, picY_Adjusted=0.0, picWidthAdjusted=0.0, picHeightAdjusted=0.0;
