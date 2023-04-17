@@ -3,7 +3,7 @@ float textRectX1, textRextY1, textRectWidth1, textRectHeight1;
 float textRectX2, textRextY2, textRectWidth2, textRectHeight2;
 float textRectX3, textRextY3, textRectWidth3, textRectHeight3;
 PFont font;
-color purpleInc=#FFFF00, restWhiteInk=#FFFFFF; //Not good for night Mode (Blue Light)
+color yellowInc=#FFFF00, restWhiteInk=#FFFFFF; //Not good for night Mode (Blue Light)
 String string1 = "I Love Computer Science.";
 String string2 = "Bottom of the Page.";
 String string3 = "Middle.";
@@ -34,7 +34,7 @@ void textSetup() { //Executed Once
   printArray(fontList); //For listing all possible fonts to choose, then createFont
   */
   // Choose Font
-  font = createFont ("Cosmic Sans MS", 55); //Verify font exists
+  font = createFont ("Comic Sans MS", 55); //Verify font exists
   //Tools / Create Font / Find Font / Do Not Press "OK", known bug
   //
 }//End Text Setup
