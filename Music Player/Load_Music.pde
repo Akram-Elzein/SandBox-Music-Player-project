@@ -14,7 +14,7 @@ void loadMusic() {
   String boneCrackSoundEffectFileName = "Bone Crack Sound Effect.mp3";
   String samsungNotificationSoundEffectFileName = "Samsung notification sound effect.mp3";
   songs[0] = minim.loadFile( musicPathway + YGFileName );
-  songs[1]  = minim.loadFile( musicPathway + ToTheMoonFileName);
+  songs[1]  = minim.loadFile( musicPathway + toTheMoonFileName);
   songs[3] = minim.loadFile( musicPathway + RelaxFileName);
   songs[4] = minim.loadFile( musicPathway + NewForceFileName);
   songs[5] = minim.loadFile( musicPathway + LegendFileName);

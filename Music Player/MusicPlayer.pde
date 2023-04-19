@@ -51,10 +51,10 @@ void keyPressed() {
   //Quit Button Key Board Shortcut
   if (key == 'Q' || key == 'q' );
   //
-  } //End keyPressed
-  //
-  }void mousePressed() {
-   if ( activateWindow==false ) activateWindow = true;
-  } //End mousePressed
-  //
-  //End MAIN Program
+} //End keyPressed
+//
+void mousePressed() {
+  if ( activateWindow==false ) activateWindow = true;
+} //End mousePressed
+//
+//End MAIN Program
