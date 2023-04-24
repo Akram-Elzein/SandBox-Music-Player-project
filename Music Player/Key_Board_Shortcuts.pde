@@ -5,6 +5,7 @@ void keyPressedShortCuts() {
   //
 }//End keyPressedShortCuts
 //
+String song
 void musicShortCuts() {
   //Key Board Short Cuts for Music, use numbers
   //Hint: notice human numbering vs. computer numbering9
@@ -70,13 +71,13 @@ void autoPlay() {
    - next song will start
    - might even start the next song at the same time as the current song
    */
-if ( autoPlayON==false ) {
-  autoPlayON=true;
-} else {
-  autoPlayON=false;
-  songs[currentSong].pause(); //enables play to continue when auto play is turned off
-}//End AutoPlay
-//
+  if ( autoPlayON==false ) {
+    autoPlayON=true;
+  } else {
+    autoPlayON=false;
+    songs[currentSong].pause(); //enables play to continue when auto play is turned off
+  }//End AutoPlay
+  //
 }
 void  playPause() {
   //Ask computer if the song is playing
