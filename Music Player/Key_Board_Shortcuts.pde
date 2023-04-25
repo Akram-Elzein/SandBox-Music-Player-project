@@ -5,7 +5,6 @@ void keyPressedShortCuts() {
   //
 }//End keyPressedShortCuts
 //
-String song
 void musicShortCuts() {
   //Key Board Short Cuts for Music, use numbers
   //Hint: notice human numbering vs. computer numbering9
