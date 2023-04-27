@@ -11,8 +11,9 @@ AudioPlayer song0, song1, song2, song3, song4, song5, song6, song7;
 AudioPlayer soundEffect0, soundEffect1;
 //
 Boolean activateWindow=false;
-//
-void setup() {
+Boolean songs
+  //
+  void setup() {
   size(300, 300);
   loadMusic();
   //
