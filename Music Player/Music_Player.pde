@@ -7,7 +7,7 @@ import ddf.minim.ugens.*;
 //
 //Global Variables
 Minim minim;
-int numberOfSongs = 8;
+int numberOfSongs = 7;
 AudioPlayer[] songs = new AudioPlayer[numberOfSongs];
 //
 int numberOfSoundEffects = 2;
