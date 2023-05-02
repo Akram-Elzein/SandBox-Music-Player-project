@@ -82,15 +82,15 @@ void  playPause() {
   //Ask computer if the song is playing
   //Note: remember to use Autoplay
   //ERROR: song will not play if at the end
-  if ( song0.isPlaying() ) {
-    song0.pause();
-  } else if (song0.position() >= song0.length()*4/5 ) { //80% of the song
-    song0.rewind();
-    song0.play();
+  if ( songs[0].isPlaying() ) {
+    songs[0].pause();
+  } else if (songs[0].position() >= songs[0].length()*4/5 ) { //80% of the song
+    songs[0].rewind();
+    songs[0].play();
     //Remember, Auto Play is beter because it plays the next song
   } else {
     //autoPlay(), is better here
-    song0.play(); //Interim solution
+    songs[0].play(); //Interim solution
   }
 }//End  playPause
 //
@@ -99,13 +99,13 @@ void mute()
   //MUTE, not PAUSE, only affects the speakers
   //ERROR:
   //ERROR: user will spam mute if song is at end of file
-  if ( song0. isMuted() ) {
-    song0.unmute();
-  } else if ( song0. isMuted() && song0.position() >= song0.length()*4/5 ) {
-    song0.rewind();
-    song0.unmute();
+  if ( songs[0]. isMuted() ) {
+    songs[0].unmute();
+  } else if ( songs[0]. isMuted() && songs[0].position() >= songs[0].length()*4/5 ) {
+    songs[0].rewind();
+    songs[0].unmute();
   } else {
-    song0.mute();
+    songs[0].mute();
   }
 }//End mute
 //

@@ -20,7 +20,7 @@ void loadMusic() {
   songs[5] = minim.loadFile( musicPathway + LegendFileName);
   songs[6] = minim.loadFile( musicPathway + FLOWALLFileName);
   songs[7] = minim.loadFile( musicPathway + calmFileName);
-  soundEffects[0]= minim.loadFile( soundEfffectPathway + boneCrackSoundEffectFileName);
+  soundEffects[0]= minim.loadFile( soundEffectPathway + boneCrackSoundEffectFileName);
   soundEffects[1] = minim.loadFile( soundEffectPathway + samsungNotificationSoundEffectFileName);
   //
   //println("Music Pathway is", musicPathway);
