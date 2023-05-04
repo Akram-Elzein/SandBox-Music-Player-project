@@ -32,7 +32,7 @@ void draw() {
   //
   //Debugging the Effective Length of the Sound Effect to code a delay
   //println ( soundEffect0.position(), soundEffect0.length() );
-  //println ("When does the sound stop? Indicates delay");
+  //println ("When does the sound stop? Indicates delay");1
   println(autoPlayON, songs[currentSong].isPlaying(), currentSong, songs[currentSong].position(), songs[currentSong].length()); 
   //
 } //End draw
